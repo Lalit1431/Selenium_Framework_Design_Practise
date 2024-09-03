@@ -26,13 +26,9 @@ public class cartsection extends AbstractComponent {
 	@FindBy(css=".totalRow button")
 	WebElement checkout;
 	
-	
-	
-	
 public  boolean  getcartproductlist(String productname) {
 	boolean match = cartproducts.stream().anyMatch(cartproduct -> cartproduct.getText().equalsIgnoreCase(productname));
 	return match;	
-	
 }
 
 public paymentsection checkout() {

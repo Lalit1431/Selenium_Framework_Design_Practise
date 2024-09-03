@@ -30,7 +30,6 @@ public class submitTest extends BaseTest{
 		bookingdetails details=payment.countryselection();
 		String confirmessage=details.thankYou();
 		Assert.assertTrue(confirmessage.equalsIgnoreCase("Thankyou for the order."));
-		
 	}
 		
 		

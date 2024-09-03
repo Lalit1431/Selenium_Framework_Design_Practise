@@ -10,14 +10,15 @@ import org.testng.annotations.Test;
 import rahulshettyacademy.pageobjet.cartsection;
 import rahulshettyacademy.pageobjet.productCatalogue;
 import rahulshettyacademy.testcomponent.BaseTest;
+import rahulshettyacademy.testcomponent.Retry;
 
 public class errorValidation extends BaseTest{
 
 	
-		@Test
+		@Test(groups = {"errorhandling"},retryAnalyzer = Retry.class )
 		public void loginerrorvalidaion() throws IOException {
 		productCatalogue catalogue = page.loginapplication("iamlalit1431@gmail.com", "Lalit31");
-		Assert.assertEquals("Incorrect email or password.", page.errormessage());
+		Assert.assertEquals("Incorrect email  password.", page.errormessage());
 		//driver.close();
 		
 	}

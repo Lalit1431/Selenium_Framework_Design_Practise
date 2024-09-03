@@ -20,7 +20,6 @@ public class standaloneTest {
 		driver.manage().window().maximize();
 		//LandingPage page=new LandingPage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
 		driver.get("https://rahulshettyacademy.com/client");
 		driver.findElement(By.id("userEmail")).sendKeys("iamlalit1431@gmail.com");
 		driver.findElement(By.id("userPassword")).sendKeys("Lalit@1431");
